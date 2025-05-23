@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saúde na palma da mão</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="app-title">Saúde na palma da mão</h1>
+            <button class="profile-btn">
+                <i class="fas fa-user-circle"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <div class="search-input">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Pesquisa...">
+        </div>
+    </div>
+
+    <main>
+        <div class="facilities-container">
+            <h2 class="section-title">Postos de Saúde/Hospitais e clínicas particulares disponíveis:</h2>
+            
+            <div class="facilities-list">
+                <div class="facility-item">
+                    <i class="fas fa-star facility-icon"></i>
+                    <div class="facility-content">
+                        <h3 class="facility-name">Hospital 1</h3>
+                        <p class="facility-description">Menu description.</p>
+                    </div>
+                    <i class="fas fa-chevron-right facility-action"></i>
+                </div>
+
+                <div class="facility-item">
+                    <i class="fas fa-star facility-icon"></i>
+                    <div class="facility-content">
+                        <h3 class="facility-name">Hospital 2</h3>
+                        <p class="facility-description">Menu description.</p>
+                    </div>
+                    <i class="fas fa-chevron-right facility-action"></i>
+                </div>
+
+                <div class="facility-item">
+                    <i class="fas fa-star facility-icon"></i>
+                    <div class="facility-content">
+                        <h3 class="facility-name">Hospital 3</h3>
+                        <p class="facility-description">Menu description.</p>
+                    </div>
+                    <i class="fas fa-chevron-right facility-action"></i>
+                </div>
+
+                <div class="facility-item">
+                    <i class="fas fa-star facility-icon"></i>
+                    <div class="facility-content">
+                        <h3 class="facility-name">Posto de Saúde 1</h3>
+                        <p class="facility-description">Menu description.</p>
+                    </div>
+                    <i class="fas fa-chevron-right facility-action"></i>
+                </div>
+
+                <div class="facility-item">
+                    <i class="fas fa-star facility-icon"></i>
+                    <div class="facility-content">
+                        <h3 class="facility-name">Posto de Saúde 2</h3>
+                        <p class="facility-description">Menu description.</p>
+                    </div>
+                    <i class="fas fa-chevron-right facility-action"></i>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button>1</button>
+                <button class="active">2</button>
+                <button>3</button>
+                <button>Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div id="map" class="map-container"></div>
+    </main>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Início</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-bell"></i>
+            <span>Notificações</span>
+        </a>
+        <a href="#" class="nav-item">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </a>
+    </nav>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
